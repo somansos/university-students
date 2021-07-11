@@ -1,0 +1,9 @@
+<h2>{{@title}}</h2>
+
+<ul>
+  {{#each @specializations as |specialization|}}
+    <li>
+      <button type="button" {{on 'click' (fn this.showSpecialization specialization)}}>{{specialization}}</button>
+    </li>
+  {{/each}}
+</ul>
